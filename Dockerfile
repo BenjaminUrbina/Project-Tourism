@@ -2,7 +2,7 @@
 FROM jupyter/base-notebook:latest
 
 # Usamos root ya que debian me estaba mandando errores de permiso. En OSX funciona correctamente
-USER root
+#USER root
 
 RUN python -m pip install "dask[complete]"
 RUN pip install pandas
